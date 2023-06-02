@@ -1,0 +1,8 @@
+1. check out or clone this repository.
+2. run this command in terminal/command prompt --> composer install --> to install all the dependencies
+3. configure database settings in .env file.
+4. run this command to create database --> symfony console make:migration
+5. run this command to create tables --> symfony console doctrine:migrations:migrate
+6. run this command to seed the database tables (table named 'type') --> symfony console doctrine:fixtures:load
+7. start the server --> symfony server:start -d
+8. in web browser, type this url to start --> http://127.0.0.1:8000/phonebook

@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My PhoneBook{% endblock %}
+
+{% block body %}
+    <div class="main">
+        <header>
+            <h1 class="title">Welcome to My Phone Book!</h1>
+        </header>
+
+        <section>
+            <div>
+                <a class="button" href="/phonebook/create">Add Contact</a>
+                <h2 class="sub_title">Contact List</h2>
+
+                <table class="table border">
+                    <tr class="table-header">
+                        <th class="header-row">Last Name</th>
+                        <th class="header-row">First Name</th>
+                        <th class="header-row">Type</th>
+                        <th class="header-row">Number</th>
+                    </tr>
+
+                    {% for contact in contacts %}
+                        <tr>
+                            <td class="data-row">{{ contact.getLastName() }}</td>
+                            <td class="data-row">{{ contact.getFirstName() }}</td>
+                            <td class="data-row">{{ contact.getType().name }}</td>
+                            <td class="data-row">{{ contact.getNumber }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p class="footer-text">Created using Symfony 5.5.6</p>
+        </footer>
+    </div>
+{% endblock %}

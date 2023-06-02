@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.main {
+    margin: 20px 20px 20px 20px;
+}
+
+.title {
+    color: slateblue;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: darkslateblue;
+    color: darkturquoise;
+    box-shadow: cornflowerblue;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+@media only screen and (max-device-width: 390px) {
+    .button {
+        border-radius: 5px;
+        background-color: darkslateblue;
+        color: darkturquoise;
+        box-shadow: cornflowerblue;
+        text-decoration: none;
+        font-size:x-large;
+        padding: 10px 15px;
+    }
+}
+
+.button:hover {
+    color: darkslateblue;
+    background-color: darkturquoise;
+}
+
+.sub_title {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+.table {
+    background-color:darkgrey;
+    width: 50%;
+}
+
+@media only screen and (max-device-width: 390px) {
+    .table {
+        background-color:darkgrey;
+        width: 90%;
+    }
+}
+
+.table-header {
+    background-color: dodgerblue;
+}
+
+.border {
+    border: solid;
+}
+
+.header-row {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.data-row {
+    background-color: lightskyblue;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.input {
+    border:solid;
+    border-radius: 5px;
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    box-shadow:gray;
+}
+
+.input:hover {
+    border: royalblue solid;
+}
+
+.input-label {
+    margin: 20px;
+    color:dodgerblue;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+}
+
+.footer-text {
+    margin-top: 50px;
+    font-size: small;
+    font-weight: lighter;
+    font-style: italic;
+}
